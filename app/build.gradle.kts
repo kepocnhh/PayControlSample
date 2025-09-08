@@ -4,6 +4,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 repositories {
     google()
     mavenCentral()
+    maven("https://repo.paycontrol.org/android/maven")
 }
 
 plugins {
@@ -70,4 +71,5 @@ androidComponents.onVariants { variant ->
 
 dependencies {
     implementation("androidx.appcompat:appcompat:1.7.1")
+    implementation("tech.paycon.sdk.v5:pcsdk:6.0.407")
 }
